@@ -24,9 +24,10 @@ public class CodeGenService {
     String baseDir = getBaseDir(codegenConfig);
     codegenConfig.setBaseDir(baseDir);
     if (StringUtils.isBlank(packName)) {
-      packName = codegenConfig.getDefaultPack() + ".bean";
+      packName = codegenConfig.getDefaultPack();
     }
-    codegenConfig.setPackageName(packName);
+    String beanPack = packName + ".bean";
+    codegenConfig.setPackageName(beanPack);
     codeGenBroker.genSql(content, codegenConfig);
     return genFilePath(baseDir);
   }

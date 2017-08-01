@@ -149,9 +149,9 @@
 					</div>
 				</div>
 				<div class="form-input">
-					<label class='label sql-label'>bean包名:</label>
+					<label class='label sql-label'>工程根包名:</label>
 					<div class="input-container">
-						<input class='text-input' type="text" name="packName" size="35" placeholder="com.justdebutit.codegen.yourapp.bean">
+						<input class='text-input' type="text" name="packName" size="35" placeholder="com.justdebutit.codegen.yourapp">
 					</div>
 				</div>
 				<div class="form-button">
