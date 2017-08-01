@@ -7,12 +7,11 @@
 
 
 ### 启动代码生成器
-```java
-git clone git@github.com:wyzssw/curd-codegen.git
-mvn clean package
-java -jar target/curd-codegen.jar
-打开浏览器 访问 http://localhost:9798/index
-```
+1. git clone git@github.com:wyzssw/curd-codegen.git
+2. mvn clean package
+3. java -jar target/curd-codegen.jar
+4. 打开浏览器 访问 http://localhost:9798/index
+
 
 ### 使用代码生成器
 1. 上传SQL建表语句,输入bean所在package名
