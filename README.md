@@ -1,6 +1,8 @@
 # curd-codegen: codegen for CURD operation project
 
 
+[![Build Status](https://travis-ci.org/wyzssw/curd-codegen.svg?branch=master)](https://travis-ci.org/wyzssw/curd-codegen)
+
 ## 使用
 
 
