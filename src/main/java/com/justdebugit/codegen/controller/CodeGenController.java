@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.google.common.base.Strings;
 import com.justdebugit.codegen.utils.ResourceUtil;
 
 @RestController
@@ -27,6 +28,15 @@ public class CodeGenController {
 
   @RequestMapping("sql")
   public void getSqlFiles(MultipartFile file, String packName,HttpServletResponse response) {
+	if (Strings.isNullOrEmpty(packName) || !packName.contains(".")) {
+		try {
+			response.setContentType("text/plain;charset=UTF-8");
+			response.getWriter().append("包名必须大于两个目录");
+		} catch (IOException e) {
+			logger.error(e.getMessage(),e);
+		}
+		return;
+	}
     String filePath =  codeGenService.getGenSqlZip(ResourceUtil.fileToString(file), packName);
     String zipName =  StringUtils.substringAfterLast(filePath, "/");
     try {
