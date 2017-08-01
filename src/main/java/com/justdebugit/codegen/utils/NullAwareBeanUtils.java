@@ -17,7 +17,6 @@ import com.google.common.collect.Lists;
 
 /**
  * 
- * @author wanghongfeng
  */
 public class NullAwareBeanUtils extends BeanUtilsBean {
   
