@@ -149,17 +149,17 @@ public class ProjectOut implements OuterConfig{
     return mybatisVar.otherVar;
   }
   
-  @CodeGen(value="log/mapBasicMarker",type=OuterType.JAVA)
+  @CodeGen(value="log/MapBasicMarker",type=OuterType.JAVA)
   public OtherVar mapBasicMarker(MybatisVar mybatisVar){
     return mybatisVar.otherVar;
   }
   
-  @CodeGen(value="log/mapMarker",type=OuterType.JAVA)
+  @CodeGen(value="log/MapMarker",type=OuterType.JAVA)
   public OtherVar mapMarker(MybatisVar mybatisVar){
     return mybatisVar.otherVar;
   }
   
-  @CodeGen(value="log/msgConverter",type=OuterType.JAVA)
+  @CodeGen(value="log/MsgConverter",type=OuterType.JAVA)
   public OtherVar msgConverter(MybatisVar mybatisVar){
     return mybatisVar.otherVar;
   }
