@@ -19,4 +19,4 @@ java -jar target/curd-codegen.jar
 2. 点击上传按钮，解压下载的zip包
 3. vim src/main/resources/application.properties修改数据库地址/用户名/密码(`spring.druid开头的配置`)
 4. 执行./build.sh 然后 执行./boot.sh start启动进程
-4. 打开浏览器 访问 `http://localhost:9798/query/实体名称` (比如表名是t_blog那么实体名称即tBlog)
+4. 打开浏览器 访问 `http://localhost:9234/query/实体名称` (比如表名是t_blog那么实体名称即tBlog)
