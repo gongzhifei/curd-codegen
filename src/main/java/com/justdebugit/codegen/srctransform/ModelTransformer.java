@@ -77,6 +77,9 @@ public class ModelTransformer implements SrcTransformer<DatabaseDefinition,Model
          if (modelPropVar.typeName() != null && !modelPropVar.typeName().contains("java.lang")) {
           modelVar.addImport(modelPropVar.typeName());
          }
+         if (modelPropVar.propName().equalsIgnoreCase("id") && modelPropVar.clazzName().equalsIgnoreCase("Integer")) {
+ 			modelVar.setIntId(true);
+ 		 }
          modelVar.addImports(Lists.newArrayList("java.util.List","java.util.Set","java.util.Map","java.util.HashMap","java.util.HashSet","java.util.ArrayList"));
          return modelPropVar;
     }).collect(Collectors.toList());

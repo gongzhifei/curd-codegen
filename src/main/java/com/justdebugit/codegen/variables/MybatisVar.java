@@ -174,6 +174,7 @@ public class MybatisVar {
     public String lc;   
     public String m;
     public String lm;
+    public boolean intId;
   }
   
   

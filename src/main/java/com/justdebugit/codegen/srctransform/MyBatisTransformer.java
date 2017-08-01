@@ -84,6 +84,7 @@ public class MyBatisTransformer implements SrcTransformer<DatabaseDefinition,Myb
          NullAwareBeanUtils.copyPropertiesIgnoreNull(modelMethod, mybatisVar.otherVar);
          modelMethod.c  = orgModel.getClazzName();
          modelMethod.lc = orgModel.getLclazz();
+         modelMethod.intId = orgModel.isIntId();
          modelMethod.m  =  StringUtils.capitalize(tableTagMap.get(orgModel.getTableName()));
          modelMethod.lm  = StringUtils.uncapitalize(modelMethod.m);
          modelMethod.control = controlVar.control;

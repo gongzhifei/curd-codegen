@@ -15,6 +15,7 @@ public class ModelVar {
   private boolean noresult; //不生成modelList class,modelList class用于构造翻页结果
   private List<ModelPropVar> props = new ArrayList<>();
   private Set<String> imports = new HashSet<>();
+  private boolean intId; //int id
   
   private String clazzFullName;
   
@@ -70,7 +71,15 @@ public class ModelVar {
     return comment;
   }
 
-  public void setComment(String comment) {
+  public boolean isIntId() {
+	return intId;
+}
+
+public void setIntId(boolean intId) {
+	this.intId = intId;
+}
+
+public void setComment(String comment) {
     this.comment = comment;
   }
 
