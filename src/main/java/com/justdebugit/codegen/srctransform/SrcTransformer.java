@@ -2,7 +2,6 @@ package com.justdebugit.codegen.srctransform;
 
 /**
  * 数据源访问者生成变量
- * @author wangjialuo
  *
  * @param <T> 数据源
  * @param <V> 变量结果集
