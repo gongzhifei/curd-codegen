@@ -3,9 +3,7 @@ package {{pack}}.utils;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
-import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Method;
-import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -347,6 +345,7 @@ public final class Rests {
     return caller;
   }
 
+  @SuppressWarnings({"unchecked", "rawtypes"})
   public static MultiValueMap<String, Object> asMap(Object obj) {
     MultiValueMap<String, Object> result = new LinkedMultiValueMap<>();
     try {
