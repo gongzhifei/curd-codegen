@@ -14,7 +14,7 @@
 
 
 ### 使用代码生成器
-1. 上传SQL建表语句,输入bean所在package名
+1. 上传mysql sql建表语句,输入bean所在package名
 2. 点击上传按钮，解压下载的zip包
 3. vim src/main/resources/application.properties修改数据库地址/用户名/密码(`spring.druid开头的配置`)
 4. 执行./build.sh 然后 执行./boot.sh start启动进程
