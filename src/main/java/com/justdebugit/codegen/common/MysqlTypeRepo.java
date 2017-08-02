@@ -21,10 +21,10 @@ public class MysqlTypeRepo {
     typeMap.put("mediumtext", "java.lang.String");
     typeMap.put("varchar", "java.lang.String");
     typeMap.put("char", "java.lang.String");
-    typeMap.put("timestamp", "java.util.Date");
+    typeMap.put("timestamp", "java.sql.TimeStamp");
     typeMap.put("date", "java.util.Date");
     typeMap.put("datetime", "java.util.Date");
-    typeMap.put("time", "java.util.Date");
+    typeMap.put("time", "java.sql.Time");
     typeMap.put("smallint", "java.lang.Integer");
   }
 
