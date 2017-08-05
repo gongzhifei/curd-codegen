@@ -12,7 +12,7 @@
 3. java -jar target/curd-codegen.jar
 4. 打开浏览器 访问 http://localhost:9798/index
 
-体验地址:http://59.110.227.31:9798/index
+体验地址:http://moviehaha.comm:9798/index
 
 ### 使用代码生成器
 1. 上传mysql sql建表语句,输入bean所在package名
